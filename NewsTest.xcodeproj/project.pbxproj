@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		BCB6FC057FAF9DFD1F379567 /* Pods_NewsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEBCC0A146FBE42B3DD2C86 /* Pods_NewsTest.framework */; };
 		C32944932B0DF0D100316473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32944922B0DF0D100316473 /* AppDelegate.swift */; };
 		C32944952B0DF0D100316473 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32944942B0DF0D100316473 /* SceneDelegate.swift */; };
 		C32944972B0DF0D100316473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32944962B0DF0D100316473 /* ViewController.swift */; };
@@ -17,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		6CEBCC0A146FBE42B3DD2C86 /* Pods_NewsTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NewsTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		85798AAB99469EBF38F1C1E9 /* Pods-NewsTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTest.debug.xcconfig"; path = "Target Support Files/Pods-NewsTest/Pods-NewsTest.debug.xcconfig"; sourceTree = "<group>"; };
+		9B2A6F58362787167AADD3C3 /* Pods-NewsTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NewsTest.release.xcconfig"; path = "Target Support Files/Pods-NewsTest/Pods-NewsTest.release.xcconfig"; sourceTree = "<group>"; };
 		C329448F2B0DF0D100316473 /* NewsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32944922B0DF0D100316473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C32944942B0DF0D100316473 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -33,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB6FC057FAF9DFD1F379567 /* Pods_NewsTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		34D7BBA2E5F10E603E39227B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6CEBCC0A146FBE42B3DD2C86 /* Pods_NewsTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		C32944862B0DF0D100316473 = {
 			isa = PBXGroup;
 			children = (
 				C32944912B0DF0D100316473 /* NewsTest */,
 				C32944902B0DF0D100316473 /* Products */,
+				EE38616D5AC003AE5FC8133D /* Pods */,
+				34D7BBA2E5F10E603E39227B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -70,6 +85,16 @@
 			path = NewsTest;
 			sourceTree = "<group>";
 		};
+		EE38616D5AC003AE5FC8133D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				85798AAB99469EBF38F1C1E9 /* Pods-NewsTest.debug.xcconfig */,
+				9B2A6F58362787167AADD3C3 /* Pods-NewsTest.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +102,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = C32944A62B0DF0D300316473 /* Build configuration list for PBXNativeTarget "NewsTest" */;
 			buildPhases = (
+				E17D9F8F2F8DDA290118D5E9 /* [CP] Check Pods Manifest.lock */,
 				C329448B2B0DF0D100316473 /* Sources */,
 				C329448C2B0DF0D100316473 /* Frameworks */,
 				C329448D2B0DF0D100316473 /* Resources */,
+				65EC378EA0498E4CE69D61C2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -135,6 +162,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		65EC378EA0498E4CE69D61C2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsTest/Pods-NewsTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-NewsTest/Pods-NewsTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-NewsTest/Pods-NewsTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E17D9F8F2F8DDA290118D5E9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-NewsTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		C329448B2B0DF0D100316473 /* Sources */ = {
@@ -286,6 +355,7 @@
 		};
 		C32944A72B0DF0D300316473 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 85798AAB99469EBF38F1C1E9 /* Pods-NewsTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +368,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -313,6 +384,7 @@
 		};
 		C32944A82B0DF0D300316473 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9B2A6F58362787167AADD3C3 /* Pods-NewsTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +397,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
