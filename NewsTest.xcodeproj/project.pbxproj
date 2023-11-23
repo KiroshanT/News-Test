@@ -10,7 +10,7 @@
 		BCB6FC057FAF9DFD1F379567 /* Pods_NewsTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CEBCC0A146FBE42B3DD2C86 /* Pods_NewsTest.framework */; };
 		C32944932B0DF0D100316473 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32944922B0DF0D100316473 /* AppDelegate.swift */; };
 		C32944952B0DF0D100316473 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32944942B0DF0D100316473 /* SceneDelegate.swift */; };
-		C32944972B0DF0D100316473 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32944962B0DF0D100316473 /* ViewController.swift */; };
+		C32944972B0DF0D100316473 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C32944962B0DF0D100316473 /* RootViewController.swift */; };
 		C329449A2B0DF0D100316473 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C32944982B0DF0D100316473 /* Main.storyboard */; };
 		C329449D2B0DF0D100316473 /* NewsTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = C329449B2B0DF0D100316473 /* NewsTest.xcdatamodeld */; };
 		C329449F2B0DF0D300316473 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C329449E2B0DF0D300316473 /* Assets.xcassets */; };
@@ -24,7 +24,7 @@
 		C329448F2B0DF0D100316473 /* NewsTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NewsTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C32944922B0DF0D100316473 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		C32944942B0DF0D100316473 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		C32944962B0DF0D100316473 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		C32944962B0DF0D100316473 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 		C32944992B0DF0D100316473 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		C329449C2B0DF0D100316473 /* NewsTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NewsTest.xcdatamodel; sourceTree = "<group>"; };
 		C329449E2B0DF0D300316473 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -73,9 +73,10 @@
 		C32944912B0DF0D100316473 /* NewsTest */ = {
 			isa = PBXGroup;
 			children = (
+				C32944A92B0DF38600316473 /* Source */,
 				C32944922B0DF0D100316473 /* AppDelegate.swift */,
 				C32944942B0DF0D100316473 /* SceneDelegate.swift */,
-				C32944962B0DF0D100316473 /* ViewController.swift */,
+				C32944962B0DF0D100316473 /* RootViewController.swift */,
 				C32944982B0DF0D100316473 /* Main.storyboard */,
 				C329449E2B0DF0D300316473 /* Assets.xcassets */,
 				C32944A02B0DF0D300316473 /* LaunchScreen.storyboard */,
@@ -85,13 +86,19 @@
 			path = NewsTest;
 			sourceTree = "<group>";
 		};
+		C32944A92B0DF38600316473 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
 		EE38616D5AC003AE5FC8133D /* Pods */ = {
 			isa = PBXGroup;
 			children = (
 				85798AAB99469EBF38F1C1E9 /* Pods-NewsTest.debug.xcconfig */,
 				9B2A6F58362787167AADD3C3 /* Pods-NewsTest.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -210,7 +217,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C32944972B0DF0D100316473 /* ViewController.swift in Sources */,
+				C32944972B0DF0D100316473 /* RootViewController.swift in Sources */,
 				C32944932B0DF0D100316473 /* AppDelegate.swift in Sources */,
 				C329449D2B0DF0D100316473 /* NewsTest.xcdatamodeld in Sources */,
 				C32944952B0DF0D100316473 /* SceneDelegate.swift in Sources */,
@@ -361,6 +368,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -390,6 +398,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = NewsTest/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
